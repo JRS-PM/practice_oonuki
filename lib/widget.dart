@@ -26,13 +26,13 @@ class _MyHomePageState extends State<MyHomePage> {
       style: const TextStyle(
         fontSize: 150,
         fontWeight: FontWeight.bold,
-        color: Color.fromARGB(255, 176, 56, 23),
+        color: Color.fromARGB(255, 23, 166, 176),
       ),
     );
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 199, 203, 136),
+      backgroundColor: const Color.fromARGB(255, 237, 242, 241),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 251, 227, 105),
+        backgroundColor: const Color.fromARGB(255, 160, 234, 219),
         title: Text(widget.title),
       ),
       body: ListView(
@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             width: 100,
             height: 100,
             decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 240, 238, 174),
+              color: const Color.fromARGB(255, 11, 187, 235),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Center(
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: List.generate(_counter, (index) {
               return Container(
                 decoration: BoxDecoration(
-                    color: Colors.yellow,
+                    color: const Color.fromARGB(255, 85, 196, 209),
                     border: Border.all(color: Colors.black)),
                 width: 70,
                 height: 70,
