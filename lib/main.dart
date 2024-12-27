@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_practice3/widget.dart';
+import 'package:flutter_application_practice3/practice2/stateful_counter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 void main() {
