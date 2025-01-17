@@ -10,11 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.1.1
   hooks_riverpod: ^2.6.1
   cupertino_icons: ^1.0.8
   flutter_hooks: ^0.20.5
   freezed_annotation: ^2.4.4
   json_annotation: ^4.9.0
+  riverpod_annotation: ^2.0.0
 
 dev_dependencies:
   flutter_test:
