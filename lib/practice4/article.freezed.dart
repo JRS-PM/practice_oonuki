@@ -124,8 +124,7 @@ class __$$ArticleImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$ArticleImpl implements _Article {
-  const _$ArticleImpl(
-      {required this.code, required this.title, required this.body});
+  _$ArticleImpl({required this.code, required this.title, required this.body});
 
   factory _$ArticleImpl.fromJson(Map<String, dynamic> json) =>
       _$$ArticleImplFromJson(json);
@@ -170,10 +169,17 @@ class _$ArticleImpl implements _Article {
       this,
     );
   }
+
+  // TODO: implement id
+  Object? get id => throw UnimplementedError();
+
+  @override
+  // ignore: override_on_non_overriding_member
+  var index;
 }
 
 abstract class _Article implements Article {
-  const factory _Article(
+  factory _Article(
       {required final int code,
       required final String title,
       required final String body}) = _$ArticleImpl;

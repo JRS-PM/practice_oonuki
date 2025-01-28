@@ -6,7 +6,7 @@ part 'article.g.dart';
 
 @freezed
 class Article with _$Article {
-  const factory Article({
+  factory Article({
     required int code,
     required String title,
     required String body,
