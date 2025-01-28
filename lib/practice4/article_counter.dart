@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'article.dart';
 
+//コメント
 class ArticleListNotifier extends Notifier<List<Article>> {
   @override
   List<Article> build() {
