@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'article.dart';
 
+//コメント
 class ArticleListNotifier extends Notifier<List<Article>> {
   @override
   List<Article> build() {
@@ -29,12 +30,12 @@ class MyArticlePage extends ConsumerWidget {
       appBar: AppBar(
         title: Text('$title ${articles.length}'),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 169, 240, 169),
+        backgroundColor: const Color.fromARGB(255, 169, 240, 236),
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(8),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 5,
+          crossAxisCount: 6,
           childAspectRatio: 1,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
@@ -79,7 +80,7 @@ class MyArticlePage extends ConsumerWidget {
                 Article(
                     code: articles.length + 1,
                     title: "New Article",
-                    body: "Sample body text"),
+                    body: "Sample body text\nSample body text"),
               );
         },
         child: const Icon(Icons.add),
